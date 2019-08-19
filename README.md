@@ -8,7 +8,7 @@ There is some documentation out their about how to migrate from one cluster to a
 * [Restoring a snapshot into a new cluster](http://docs.datastax.com/en/cassandra/2.1/cassandra/operations/ops_snapshot_restore_new_cluster.html)
 
 
-Here is some script to help you do that quite easily, method doesn't care if you're restoring on the cluster or to another cluster, with same or different topology :
+Here is some script to help you do that quite easily, method doesn't care if you're restoring on the cluster or to another cluster, with same or different topology , also cassandra clusters running as kubernetes pods:
 
 
 Create an export
