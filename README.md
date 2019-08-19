@@ -35,11 +35,11 @@ Import data
 
 Now you need to import data to do so, you have to :
 
-* Drop the old keyspace
+* Drop the old keyspace ( Added timeout to the drop statement) 
 * Create the keyspace schema
 * Import date into table with [sstableloader](https://www.datastax.com/dev/blog/bulk-loading)
 
-That what the `import.sh` script is doing from the previous generated tar file.
+That what the `import.sh` script is doing from the previous generated tar file. ( dynamically get IP address from /etc/hosts if the cassandra is running as pod in Kubernetes) 
 
 ```bash
 $ ./import.sh <keypsace backup tar file>
